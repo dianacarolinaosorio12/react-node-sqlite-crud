@@ -1,0 +1,38 @@
+
+body {
+  /* Definimos un fondo complejo y vibrante */
+  background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 50%, #f44369 100%);
+
+  /* Aseguramos que cubra toda la pantalla y no se repita */
+  min-height: 100vh;
+  background-attachment: fixed; /* Para que el gradiente no se mueva con el scroll */
+  background-size: cover;
+
+  /* Estilos base del texto (opcional, se pueden sobreescribir) */
+  /* @apply text-slate-800; */ /* Comentado ya que el diseño es oscuro */
+
+  /* Añadimos soporte para la clase 'dark' si aún quieres el toggle, aunque este diseño es inherentemente oscuro */
+  /* @apply dark:bg-gradient-to-br dark:from-slate-900 dark:to-indigo-900 dark:text-slate-200; */
+
+  /* Podemos añadir fuentes personalizadas aquí si queremos */
+  font-family: 'Inter', sans-serif; /* Ejemplo usando Inter (necesitarías importarla) */
+}
+
+/* Estilo base para placeholders (adaptado al fondo oscuro) */
+
+
+/* Opcional: Estilos para la barra de scroll (Webkit) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Track semitransparente */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3); /* Thumb más visible */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
